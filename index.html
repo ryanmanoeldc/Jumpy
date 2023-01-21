@@ -1,68 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Jumpy</title>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!-- Estilos -->
     <link rel="stylesheet" href="styles.css">
-    <title> CCXP 2022</title>
-
 </head>
-
 <body>
-    <header>
-        <img src="ccxp22.png" alt="Logo CCXP" width="150px">
-    </header>
+    <div id="logo-dnc">
+        <img src="dnclogo.png" alt="Logo DNC">
+    </div>
 
-    <section id="sec1">
-        <div id="desc">
-            <h1 id="titulo"> REVIVA O ÉPICO </h1>
-            <p id="data"> <strong>DE 10 A 14 DE DEZEMBRO </strong> </p>
-            <p id="conteudo"> Você consegue sentir? É aquela sensação de
-                finalmente poder falar em voz alta: "estamos em casa".
-                Sim, em dezembro de 2022, teremos a volta da CCXP física.
-                Mas não será qualquer CCXP, vai ser a maior de todos os tempos.
-                Prepare-se para visitar seus universos favoritos, explorar o Artists'
-                Valley, se emocionar nos auditórios e encontrar aventuras épicas a
-                cada passo pelos nossos corredores.</p>
+    <section>
+        <div id="header">
+            <img src="jumpylogo.JPG"Logo Jumpy">
+            <h1>Bem vindo ao Jumpy!</h1>
         </div>
-        <div>
-            <div id="countdown">
-                <p class="cd-item" id="dia"></p>
-                <p class="cd-item" id="hora"></p>
-                <p class="cd-item" id="min"></p>
-                <p class="cd-item" id="seg"></p>
+
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">Nome Completo:</label>
+                <input id="username" type="text" placeholder="Nome completo" name="username">
+                <i><img class="img-success" src="success.png" alt="" width="20"></i>
+                <i><img class="img-error" src="error-icon.svg" alt="" width="20"></i>
+                <small></small>
             </div>
-            <div id="subtitulo">
-                <p id="aviso"> <strong> PARA A MAIOR CCXP DE TODOS OS TEMPOS </strong></p>
+            
+            <div class="form-control">
+                <label for="email">Email:</label>
+                <input id="email" type="text" placeholder="Email@email.com" name="email">
+                <i><img class="img-success" src="success.png" alt="" width="20"></i>
+                <i><img class="img-error" src="error-icon.svg" alt="" width="20"></i>
+                <small></small>
             </div>
-            <div id="video">
-                <video width="98%" controls loop>
-                    <source src="Arlequinaccxp.mp4" type="video/mp4"> </video>
+
+            <div class="form-control">
+                <label for="phone">Telefone:</label>
+                <input type="text" id="phone" placeholder="(00) 00000-0000" name="phone">
+                <i><img class="img-success" src="success.png" alt="" width="20"></i>
+                <i><img class="img-error" src="error-icon.svg" alt="" width="20"></i>
+                <small></small>
             </div>
-        </div>
+
+            <div class="form-control">
+                <label for="doc">CPF:</label>
+                <input type="text" id="doc" placeholder="000.000.000-00" name="cpf">
+                <i><img class="img-success" src="success.png" alt="" width="20"></i>
+                <i><img class="img-error" src="error-icon.svg" alt="" width="20"></i>
+                <small></small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" placeholder="****************" name="password">
+                <i><img class="img-success" src="success.png" alt="" width="20"></i>
+                <i><img class="img-error" src="error-icon.svg" alt="" width="20"></i>
+                <small></small>
+            </div>
+
+            <button type="submit" id="submit">Cadastrar</button>
+            <p class="form-control result" id="results"></p>
+        </form>
+        
     </section>
-    <section id="compre">
-        <div>
-            <div id="subtitulo-ing">
-                <strong> AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</strong>
-            </div>
-            <div id="ingressos">
-                <img class="quinta1" src="quinta.png" alt="Imagem Ingresso de Quinta Feira">
-                <img src="sexta.png" alt="Imagem Ingresso de Sexta Feira">
-                <img src="sabado.png" alt="Imagem Ingresso de Sabado">
-                <img src="domingo.png" alt="Imagem Ingresso de Domingo">
-            </div>
-        </div>
-        <div id="botao-compra">
-            <button> GARANTA O SEU!</button>
-        </div>
-    </section>
 
-
-    <script src="cronometro.js"> </script>
+    <script src="jumpyy.js"></script>
 </body>
-
-
 </html>
